@@ -1,0 +1,197 @@
+CRITICAL - 2024-06-10 07:53:21 --> ErrorException: Undefined variable $kode_kecamatan
+in APPPATH\Views\Dashboard.php on line 22.
+ 1 APPPATH\Views\Dashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_kecamatan', 'C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(38): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 07:56:22 --> ErrorException: Undefined variable $kecamatan
+in APPPATH\Views\Dashboard.php on line 22.
+ 1 APPPATH\Views\Dashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kecamatan', 'C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(38): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 07:57:07 --> ErrorException: Undefined variable $kecamatan
+in APPPATH\Views\Dashboard.php on line 22.
+ 1 APPPATH\Views\Dashboard.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kecamatan', 'C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(38): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 07:59:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:20:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 08:26:13 --> ErrorException: Attempt to read property "kode_kecamatan" on array
+in APPPATH\Controllers\Dashboard.php on line 53.
+ 1 APPPATH\Controllers\Dashboard.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_kecamatan" on array', 'C:\\xampp\\htdocs\\websig\\app\\Controllers\\Dashboard.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->getdata()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 08:27:02 --> ErrorException: Attempt to read property "kode_kecamatan" on array
+in APPPATH\Controllers\Dashboard.php on line 53.
+ 1 APPPATH\Controllers\Dashboard.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_kecamatan" on array', 'C:\\xampp\\htdocs\\websig\\app\\Controllers\\Dashboard.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->getdata()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 08:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 08:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 09:36:41 --> ErrorException: Undefined variable $data
+in APPPATH\Views\Dashboard.php on line 18.
+ 1 APPPATH\Views\Dashboard.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(38): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 09:37:24 --> ErrorException: Undefined variable $baris
+in APPPATH\Views\Dashboard.php on line 18.
+ 1 APPPATH\Views\Dashboard.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $baris', 'C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(38): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 09:40:17 --> ErrorException: Undefined variable $kode_kecamatan
+in APPPATH\Views\Dashboard.php on line 18.
+ 1 APPPATH\Views\Dashboard.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_kecamatan', 'C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(38): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 09:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 09:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 09:56:38 --> ParseError: syntax error, unexpected single-quoted string ".json", expecting ")"
+in APPPATH\Views\Dashboard.php on line 18.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashboard', [], true)
+ 3 APPPATH\Controllers\Dashboard.php(38): view('Dashboard', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 10:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 10:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 10:03:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 10:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-10 16:32:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\websig\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\websig\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'webgis-php', 3306, '', 0)
+#1 C:\xampp\htdocs\websig\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\websig\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\websig\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\websig\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\websig\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\websig\app\Controllers\Dashboard.php(18): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\websig\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\websig\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\websig\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\websig\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\websig\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\websig\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\websig\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\websig\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\websig\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\websig\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\websig\app\Controllers\Dashboard.php(18): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\websig\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\websig\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\websig\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\websig\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-10 16:32:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(18): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 16:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 16:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 16:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 16:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 16:46:07 --> ErrorException: Attempt to read property "kode_kecamatan" on null
+in APPPATH\Views\Dashboard.php on line 15.
+ 1 APPPATH\Views\Dashboard.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_kecamatan" on null', 'C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\websig\\app\\Views\\Dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashboard', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(42): view('Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 17:07:50 --> ErrorException: Attempt to read property "kode_kecamatan" on array
+in APPPATH\Controllers\Dashboard.php on line 49.
+ 1 APPPATH\Controllers\Dashboard.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_kecamatan" on array', 'C:\\xampp\\htdocs\\websig\\app\\Controllers\\Dashboard.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->getdata()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 17:09:30 --> ErrorException: Attempt to read property "kode_kecamatan" on array
+in APPPATH\Controllers\Dashboard.php on line 49.
+ 1 APPPATH\Controllers\Dashboard.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_kecamatan" on array', 'C:\\xampp\\htdocs\\websig\\app\\Controllers\\Dashboard.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->getdata()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-10 17:13:48 --> ErrorException: Attempt to read property "kode_kecamatan" on array
+in APPPATH\Controllers\Dashboard.php on line 49.
+ 1 APPPATH\Controllers\Dashboard.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_kecamatan" on array', 'C:\\xampp\\htdocs\\websig\\app\\Controllers\\Dashboard.php', 49)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->getdata()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-10 17:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 17:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 17:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 17:55:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 18:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 18:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-10 18:32:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-10 18:46:08 --> ErrorException: Attempt to read property "kode_kecamatan" on array
+in APPPATH\Controllers\Dashboard.php on line 43.
+ 1 APPPATH\Controllers\Dashboard.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_kecamatan" on array', 'C:\\xampp\\htdocs\\websig\\app\\Controllers\\Dashboard.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->getdata()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

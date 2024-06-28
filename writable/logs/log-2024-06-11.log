@@ -1,0 +1,810 @@
+INFO - 2024-06-11 10:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:18:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-11 10:21:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-11 11:25:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 11:25:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-11 11:36:12 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=11752 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 11:36:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-11 11:42:07 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=6528 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 11:42:07 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 11:42:07 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-06-11 11:42:07 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=6528 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 11:42:07 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 11:42:07 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-06-11 11:42:07 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=6528 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 11:42:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 11:42:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 11:42:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 11:59:44 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-06-11 11:59:44 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=11080 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-06-11 11:59:44 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=11080 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Kecamatan.php(12): CodeIgniter\BaseModel->findAll()
+#8 C:\xampp\htdocs\sigkab\app\Controllers\Kecamatan.php(7): App\Controllers\kecamatan->tampil()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\kecamatan->index()
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\kecamatan))
+#11 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Kecamatan.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Kecamatan.php(7): App\Controllers\kecamatan->tampil()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\kecamatan->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\kecamatan))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Kecamatan.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Kecamatan.php(7): App\Controllers\kecamatan->tampil()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\kecamatan->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\kecamatan))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2024-06-11 11:59:44 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=11080 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 11:59:44 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 11:59:44 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 11:59:44 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 11:59:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 11:59:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 11:59:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kecamatan`', [], false)
+ 3 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Kecamatan.php(12): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Kecamatan.php(7): App\Controllers\kecamatan->tampil()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\kecamatan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\kecamatan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-11 12:04:28 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=16128 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 12:04:28 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 12:04:28 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 12:04:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-11 12:05:26 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=16128 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 12:05:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-11 12:20:06 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=13308 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 12:20:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 13:13:46 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 13:13:46 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 13:13:46 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 13:13:46 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 13:13:46 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-06-11 13:27:22 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=11172 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 13:27:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-11 13:27:44 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=2992 in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\xampp\\htdocs...', 185)
+#1 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#5 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#7 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#10 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'sigkab', 3306, '', 0)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#6 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\xampp\htdocs\sigkab\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\sigkab\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\sigkab\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\sigkab\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\sigkab\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+#5 C:\xampp\htdocs\sigkab\app\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+#6 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+#7 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 C:\xampp\htdocs\sigkab\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\sigkab\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-11 13:27:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kabupaten`
+WHERE `kabupaten`.`id_kabupaten` = :kabupaten.id_kabupaten:', [...], false)
+ 3 SYSTEMPATH\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(577): CodeIgniter\Model->doFind(true, 1)
+ 5 APPPATH\Controllers\Dashboard.php(17): CodeIgniter\BaseModel->find(1)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-11 13:43:13 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 13:43:13 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 13:43:13 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-06-11 13:58:41 --> ErrorException: Maximum execution time of 120 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 202.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

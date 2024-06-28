@@ -1,0 +1,72 @@
+// AJAX function untuk mengambil data per kecamatan
+
+$.getJSON("<?=base_url('public/uploads/3302010.json')?>", function(data){
+    L.geoJson(data,{
+        style:function(feature){
+            return {
+                fillColor: '#FFEDA0', // warna polygon
+                weight: 2,
+                opacity: 1,
+                color: '#FEB24C', // warna garis batas polygon
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        }
+    }).addTo(map);
+});
+$.getJSON("<?=base_url('public/uploads/3302020.json')?>", function(data){
+    L.geoJson(data,{
+        style:function(feature){
+            return {
+                fillColor: '#FFEDA0', // warna polygon
+                weight: 2,
+                opacity: 1,
+                color: '#FEB24C', // warna garis batas polygon
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        }
+    }).addTo(map);
+});
+$.getJSON("<?=base_url('public/uploads/3302030.json')?>", function(data){
+    L.geoJson(data,{
+        style:function(feature){
+            return {
+                fillColor: '#FFEDA0', // warna polygon
+                weight: 2,
+                opacity: 1,
+                color: '#FEB24C', // warna garis batas polygon
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        }
+    }).addTo(map);
+});
+$.getJSON("<?=base_url('public/uploads/3302040.json')?>", function(data){
+    L.geoJson(data,{
+        style:function(feature){
+            return {
+                fillColor: '#FFEDA0', // warna polygon
+                weight: 2,
+                opacity: 1,
+                color: '#FEB24C', // warna garis batas polygon
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        }
+    }).addTo(map);
+});
+
+// AJAX function untuk mengambil data per kecamatan
+function getData(kode_kecamatan){
+    $.ajax({
+    url: '<?php echo site_url('getdata'); ?>',
+    type: 'GET',
+    data: {kode_kecamatan: kode_kecamatan},success: function(response){
+            var obj = JSON.stringify(response); 
+            var res = JSON.parse(obj);
+            $('#tableBody').html(res.hasil);
+            }
+    });
+}
+getData();

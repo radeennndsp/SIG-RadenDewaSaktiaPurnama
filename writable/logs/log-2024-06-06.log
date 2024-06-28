@@ -1,0 +1,72 @@
+CRITICAL - 2024-06-06 16:29:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_dashbord.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_dashbord.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_dashbord', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('v_dashbord', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 16:32:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Dashbord.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Dashbord.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashbord', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('Dashbord', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 16:33:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Dashbord.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Dashbord.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashbord', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('Dashbord', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 16:33:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Dashbord.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Dashbord.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashbord', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('Dashbord', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 16:33:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Dashbord.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Dashbord.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Dashbord', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('Dashbord', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 16:35:22 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tampil.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampil', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('tampil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->kecamatan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 16:40:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "tampil.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('tampil.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('tampil', [], true)
+ 3 APPPATH\Controllers\Home.php(22): view('tampil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->kecamatan()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 16:40:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_sekolah.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_sekolah.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('v_sekolah', [], true)
+ 3 APPPATH\Controllers\Home.php(30): view('v_sekolah', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->sekolah()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
